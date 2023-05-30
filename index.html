@@ -8,13 +8,15 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Bugün ne kadar fakirleştin?</h1>
-    <div>
-        <label for="tlAmount">Elinde ne kadar Türk Lirası var?:</label>
-        <input type="number" id="tlAmount" value="10000">
-        <button onclick="calculate()">Hesapla</button>
+    <div class="container">
+        <h1 class="title">Bugün ne kadar fakirleştin?</h1>
+        <div>
+            <label class="tlAmountLabel" for="tlAmount">Elinde ne kadar Türk Lirası var?:</label>
+            <input class="tlInput" type="number" id="tlAmount" value="10000">
+            <button class="button" onclick="calculate()">Hesapla</button>
+        </div>
+        <div id="result"></div>
     </div>
-    <div id="result"></div>
 
 
     <script src="script.js"></script>
