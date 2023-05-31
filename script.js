@@ -20,8 +20,13 @@ function calculate() {
     result.innerHTML = "";
     result.innerHTML += `<p> Bugün ${dailyLostValue.toFixed(2)} TL fakirleştin,<br/>Bu kafayla gidersen ayda ${(dailyLostValue * 30).toFixed(2)} TL, yılda ${(dailyLostValue * 365).toFixed(2)} TL fakirleşeceksin.</p>`
 
-    result.innerHTML += `<u>Geçen sene bu parayla ortalama:</u><br/>`
-    result.innerHTML +=  `<li>${Math.floor(tlAmount / lastYearBagelPrice)} simit alabiliyordun, Bu yıl ortalama ${Math.floor(tlAmount / currentBagelPrice)} simit alabiliyorsun.</li>`
-    result.innerHTML += ` <li>${Math.floor(tlAmount / lastYearTeaPrice)} bardak çay içebiliyordun, Bu yıl ortalama ${Math.floor(tlAmount / currentTeaPrice)} bardak çay içebiliyorsun.</li>`
+    var compareList = document.getElementById("compareList")
+    compareList.style.display = "block"
+
+    var teaText = document.getElementById("teaText")
+    var bagelText = document.getElementById("bagelText")
+
+    teaText.innerHTML = `Geçen Yıl Ortalama: ${Math.floor(tlAmount / lastYearTeaPrice)} bardak<br/>Bu Yıl Ortalama: ${Math.floor(tlAmount / currentTeaPrice)} bardak<br/>`
+    bagelText.innerHTML = `Geçen Yıl Ortalama: ${Math.floor(tlAmount / lastYearBagelPrice)} adet<br/>Bu Yıl Ortalama: ${Math.floor(tlAmount / currentBagelPrice)} adet<br/>`
   }
   

@@ -54,3 +54,22 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
+#compareList{
+  display: none;
+}
+
+.compareListElementContainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.compareListElementTextContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
