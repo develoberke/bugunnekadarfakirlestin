@@ -55,6 +55,13 @@ body {
   margin-bottom: 5px;
 }
 
+.resultText{
+  text-align: center;
+  margin: 0;
+  font-size: large;
+  font-weight: 600;
+}
+
 #compareList{
   margin-top: 35px;
   display: none;

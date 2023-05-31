@@ -6,7 +6,7 @@ function calculate() {
 
     var result = document.getElementById("result");
     result.innerHTML = "";
-    result.innerHTML += `<p> Bugün ${dailyLostValue.toFixed(2)} TL fakirleştin,<br/>Bu kafayla gidersen ayda ${(dailyLostValue * 30).toFixed(2)} TL, yılda ${(dailyLostValue * 365).toFixed(2)} TL fakirleşeceksin.<br/></p>`
+    result.innerHTML += `<div><p class="resultText">Bugün ${dailyLostValue.toFixed(2)} TL fakirleştin</p><br/>Bu kafayla gidersen ayda ${(dailyLostValue * 30).toFixed(2)} TL, yılda ${(dailyLostValue * 365).toFixed(2)} TL fakirleşeceksin.<br/></div>`
 
 
     var today = new Date();
@@ -41,8 +41,8 @@ function calculate() {
   var lastYearBagelPrice = 3.5;
   var currentBagelPrice = 7;
 
-  var lastYearTeaPrice = 4; 
-  var currentTeaPrice = 8;
+  var lastYearTeaPrice = 4.2; 
+  var currentTeaPrice = 7.5;
 
   var teaText = document.getElementById("teaText")
   var bagelText = document.getElementById("bagelText")
