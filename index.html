@@ -11,24 +11,26 @@
     <div class="container">
         <h1 class="title">Bugün ne kadar fakirleştin?</h1>
         <div>
-            <label class="tlAmountLabel" for="tlAmount">Elinde ne kadar Türk Lirası var?:</label>
+            <label class="tlAmountLabel" for="tlAmount">Elinde ne kadar Türk Lirası var?</label>
             <input class="tlInput" type="number" id="tlAmount" value="10000">
             <button class="button" onclick="calculate()">Hesapla</button>
         </div>
         <div id="result"></div>
         <div id="compareList">
+            <p>Peki ya bu parayla ne alabilirdin/alabilirsin:</p>
             <div class="compareListElementContainer">
-                <img src="tea.jpg" height=50 width=50/>
-                <div id="teaText" class="compareListElementTextContainer">
-                    Geçen Yıl: 100<br/>
-                    Bu Yıl: 100<br/>
+                <img src="dollar.png" height=70 width=70/>
+                <div id="dollarText" class="compareListElementTextContainer">
                 </div>
             </div>
             <div class="compareListElementContainer">
-                <img src="bagel.jpg" height=50 width=50/>
+                <img src="tea.jpg" height=70 width=70/>
+                <div id="teaText" class="compareListElementTextContainer">
+                </div>
+            </div>
+            <div class="compareListElementContainer">
+                <img src="bagel.jpg" height=70 width=70/>
                 <div id="bagelText" class="compareListElementTextContainer">
-                    Geçen Yıl: 100<br/>
-                    Bu Yıl: 100<br/>
                 </div>
             </div>
         </div>
