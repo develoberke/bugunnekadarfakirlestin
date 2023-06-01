@@ -50,4 +50,18 @@ function calculate() {
   teaText.innerHTML = `Geçen Yıl Ortalama: ${Math.floor(tlAmount / lastYearTeaPrice)} bardak<br/>Bu Yıl Ortalama: ${Math.floor(tlAmount / currentTeaPrice)} bardak<br/>`
   bagelText.innerHTML = `Geçen Yıl Ortalama: ${Math.floor(tlAmount / lastYearBagelPrice)} adet<br/>Bu Yıl Ortalama: ${Math.floor(tlAmount / currentBagelPrice)} adet<br/>`
 }
+  /*
+    https://api.api-ninjas.com/v1/inflation?country=Turkey
+    headers: { 'X-Api-Key': '4Mefm5naMZkr+rAVYiaPcA==MqsdPZpJpifU6M2r'},
   
+
+    [
+      {
+        "country": "Turkey",
+        "type": "CPI",
+        "period": "april 2023",
+        "monthly_rate_pct": 2.386,
+        "yearly_rate_pct": 43.684
+      }
+    ]
+  */
