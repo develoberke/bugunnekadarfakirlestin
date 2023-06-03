@@ -42,8 +42,8 @@ async function calculate() {
     var teaText = document.getElementById("teaText")
     var bagelText = document.getElementById("bagelText")
 
-    teaText.innerHTML = `Geçen Yıl Ortalama: ${Math.floor(tlAmount / lastYearTeaPrice)} bardak<br/>Bu Yıl Ortalama: ${Math.floor(tlAmount / currentTeaPrice)} bardak<br/>`
-    bagelText.innerHTML = `Geçen Yıl Ortalama: ${Math.floor(tlAmount / lastYearBagelPrice)} adet<br/>Bu Yıl Ortalama: ${Math.floor(tlAmount / currentBagelPrice)} adet<br/>`
+    teaText.innerHTML = `Geçen Yıl Ortalama: ${Math.floor(tlAmount / lastYearTeaPrice)} bardak çay<br/>Bu Yıl Ortalama: ${Math.floor(tlAmount / currentTeaPrice)} bardak çay<br/>`
+    bagelText.innerHTML = `Geçen Yıl Ortalama: ${Math.floor(tlAmount / lastYearBagelPrice)} adet simit<br/>Bu Yıl Ortalama: ${Math.floor(tlAmount / currentBagelPrice)} adet simit<br/>`
   
 }
 
